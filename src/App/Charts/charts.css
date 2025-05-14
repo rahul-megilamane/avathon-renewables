@@ -1,0 +1,83 @@
+.charts-header {
+    width: 100%;
+    text-align: left;
+}
+
+.chart-filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    width: 95%;
+    text-align: left; 
+    margin-top: 15px;
+    margin-left: 40px;
+  }
+  
+  .radio-group {
+    display: inline-flex;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .radio-option {
+    position: relative;
+  }
+  
+  .radio-option input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-option label {
+    padding: 8px 14px;
+    display: block;
+    cursor: pointer;
+    background-color: #d3d3d3;
+    color: #555;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .radio-option input[type="radio"]:checked + label {
+    background-color: #4c9ba8;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .chart-filter-devices {
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f5f5f5;
+    font-size: 14px;
+    
+    display: flex;
+  }
+  
+  .chart-devices-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 4px;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 100%;
+  }
+  
+  .chart-dropdown-item {
+    padding: 8px 31px;
+    cursor: pointer;
+  }
+  
+  .chart-dropdown-item:hover {
+    background-color: #eee;
+  }
